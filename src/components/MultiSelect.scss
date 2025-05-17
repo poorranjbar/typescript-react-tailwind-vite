@@ -1,0 +1,81 @@
+.multi-select {
+  position: relative;
+  width: 320px;
+  font-family: sans-serif;
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+  &__control {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-height: 40px;
+    background: #fff;
+    cursor: text;
+  }
+
+  &__tag {
+    background-color: #e0e7ff;
+    color: #1e3a8a;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  &__input-inline {
+    flex: 1;
+    min-width: 100px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 4px;
+    background: #fff;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 10;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 4px;
+    list-style: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    justify-content: space-between;
+
+    &:hover {
+      background-color: #f3f4f6;
+    }
+
+    &.selected {
+      background-color: #dbeafe;
+      color: #3b82f6;
+    }
+  }
+}

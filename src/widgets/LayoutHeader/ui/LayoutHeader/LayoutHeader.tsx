@@ -14,7 +14,7 @@ const LayoutHeader: FC = () => {
               { name: "About", href: "/about" },
             ]}
           />
-          <Logo logoName={"daisyUI"} />
+          <Logo logoName={"Lobox"} />
           <div className="navbar-end">
             <button className="btn-ghost btn-circle btn">
               <svg
